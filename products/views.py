@@ -25,3 +25,8 @@ class ProductListView(ListView):
         context['categories'] = Category.objects.all()
         return context
 
+
+class ProductDetailView(DetailView):
+    model = Product
+
+
