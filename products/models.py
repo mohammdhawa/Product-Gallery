@@ -23,6 +23,7 @@ class Product(models.Model):
     height = models.CharField(_('height'), max_length=20, blank=True, null=True)
     diameter = models.CharField(_('diameter'), max_length=20, blank=True, null=True)
     size = models.CharField(_('size'), max_length=20, blank=True, null=True)
+    weight = models.CharField(_('weight'), max_length=20, blank=True, null=True)
     production_capacity = models.CharField(_('production_capacity'), max_length=100, blank=True, null=True)
     price = models.DecimalField(_('price'), decimal_places=2, max_digits=8, blank=True, null=True)
     code = models.CharField(_('code'), max_length=8, unique=True)

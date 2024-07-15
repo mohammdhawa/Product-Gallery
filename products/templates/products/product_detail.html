@@ -120,9 +120,37 @@
                         <a href="#" class="primary-btn">ADD TO CARD</a>
                         <a href="#" class="heart-icon"><span class="icon_heart_alt"></span></a>
                         <ul>
-                            <li><b>Availability</b> <span>In Stock</span></li>
+                            {% if object.maximum_velocity %}
+                                <li><b>Maximum Velocity</b> <span>{{ object.maximum_velocity }}</span></li>
+                            {% endif %}
+                            {% if object.electrical_capacity %}
+                                <li><b>Electrical Capacity</b> <span>{{ object.electrical_capacity }}</span></li>
+                            {% endif %}
+                            {% if object.production_capacity %}
+                                <li><b>Production Capacity</b> <span>{{ object.production_capacity }}</span></li>
+                            {% endif %}
+                            {% if object.code %}
+                                <li><b>Code</b> <span>{{ object.code }}</span></li>
+                            {% endif %}
+                            {% if object.length %}
+                                <li><b>Length</b> <span>{{ object.length }}</span></li>
+                            {% endif %}
+                            {% if object.width %}
+                                <li><b>Width</b> <span>{{ object.width }}</span></li>
+                            {% endif %}
+                            {% if object.height %}
+                                <li><b>Height</b> <span>{{ object.height }}</span></li>
+                            {% endif %}
+                            {% if object.diameter %}
+                                <li><b>Diameter</b> <span>{{ object.diameter }}</span></li>
+                            {% endif %}
+                            {% if object.size %}
+                                <li><b>Size</b> <span>{{ object.size }}</span></li>
+                            {% endif %}
+
+
                             <li><b>Shipping</b> <span>01 day shipping. <samp>Free pickup today</samp></span></li>
-                            <li><b>Weight</b> <span>0.5 kg</span></li>
+                            <li>b>Weight</b> <span>0.5 kg</span></li><
                             <li><b>Share on</b>
                                 <div class="share">
                                     <a href="#"><i class="fa fa-facebook"></i></a>
