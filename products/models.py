@@ -24,7 +24,8 @@ class Product(models.Model):
     diameter = models.CharField(_('diameter'), max_length=20)
     size = models.CharField(_('size'), max_length=20)
     production_capacity = models.CharField(_('production_capacity'), max_length=100)
-    price = models.DecimalField(_('price'), decimal_places=2, max_digits=7)
+    price = models.DecimalField(_('price'), decimal_places=2, max_digits=8)
+    price = models.DecimalField(_('price'), decimal_places=2, max_digits=8)
     code = models.CharField(_('code'), max_length=8, unique=True)
     image = models.ImageField(_('image'), upload_to='products/')
 
